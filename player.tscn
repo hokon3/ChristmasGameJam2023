@@ -1,0 +1,48 @@
+[gd_scene load_steps=7 format=3 uid="uid://clls8myi3i52d"]
+
+[ext_resource type="Texture2D" uid="uid://b5xj7xirjc0hs" path="res://Assets/deer/deer-m-run.png" id="1_f3aus"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dgfpn"]
+atlas = ExtResource("1_f3aus")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2g6u6"]
+atlas = ExtResource("1_f3aus")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7m4wc"]
+atlas = ExtResource("1_f3aus")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_carjc"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dgfpn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2g6u6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7m4wc")
+}],
+"loop": true,
+"name": &"run",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_8flkk"]
+radius = 5.0
+height = 22.0
+
+[node name="Area2D" type="Area2D"]
+position = Vector2(541, 288)
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_carjc")
+animation = &"run"
+frame_progress = 0.0477162
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_8flkk")
