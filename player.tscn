@@ -1,6 +1,11 @@
-[gd_scene load_steps=7 format=3 uid="uid://clls8myi3i52d"]
+[gd_scene load_steps=9 format=3 uid="uid://clls8myi3i52d"]
 
+[ext_resource type="Script" path="res://player.gd" id="1_abbby"]
 [ext_resource type="Texture2D" uid="uid://b5xj7xirjc0hs" path="res://Assets/deer/deer-m-run.png" id="1_f3aus"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_quolt"]
+atlas = ExtResource("1_f3aus")
+region = Rect2(0, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_dgfpn"]
 atlas = ExtResource("1_f3aus")
@@ -16,6 +21,14 @@ region = Rect2(64, 0, 32, 32)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_carjc"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_quolt")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_dgfpn")
@@ -35,14 +48,18 @@ animations = [{
 radius = 5.0
 height = 22.0
 
-[node name="Area2D" type="Area2D"]
+[node name="Player" type="CharacterBody2D"]
 position = Vector2(541, 288)
+script = ExtResource("1_abbby")
 metadata/_edit_group_ = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_carjc")
 animation = &"run"
-frame_progress = 0.0477162
+frame_progress = 0.199397
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CapsuleShape2D_8flkk")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(2, 2)

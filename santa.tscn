@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=3 uid="uid://nxhh3lwaa3ut"]
+
+[ext_resource type="Texture2D" uid="uid://b7pllwjgjr0om" path="res://Assets/santa/PNG/24x32/Santa-001-light.png" id="1_fr5qr"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_qt612"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5qk45"]
+atlas = ExtResource("1_fr5qr")
+region = Rect2(24, 64, 24, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qcmye"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5qk45")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[node name="santa" type="CharacterBody2D"]
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 2)
+shape = SubResource("CapsuleShape2D_qt612")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_qcmye")
+animation = &"idle"
