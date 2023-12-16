@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://jy6cs4p6erdg"
+path="res://.godot/imported/bgm_action_5.mp3-8279571fd919e24bd92e39da9f19fa3c.mp3str"
+
+[deps]
+
+source_file="res://Assets/8-bit Music Pack (Loopable) codemanu/bgm_action_5.mp3"
+dest_files=["res://.godot/imported/bgm_action_5.mp3-8279571fd919e24bd92e39da9f19fa3c.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

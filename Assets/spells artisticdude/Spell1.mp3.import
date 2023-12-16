@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cb2prtomm03lh"
+path="res://.godot/imported/Spell1.mp3-823907931d6aac8d20b5b24dd4257076.mp3str"
+
+[deps]
+
+source_file="res://Assets/spells artisticdude/Spell1.mp3"
+dest_files=["res://.godot/imported/Spell1.mp3-823907931d6aac8d20b5b24dd4257076.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

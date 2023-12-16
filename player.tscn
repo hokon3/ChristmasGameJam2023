@@ -1,7 +1,9 @@
-[gd_scene load_steps=9 format=3 uid="uid://clls8myi3i52d"]
+[gd_scene load_steps=11 format=3 uid="uid://clls8myi3i52d"]
 
 [ext_resource type="Script" path="res://player.gd" id="1_abbby"]
 [ext_resource type="Texture2D" uid="uid://b5xj7xirjc0hs" path="res://Assets/deer/deer-m-run.png" id="1_f3aus"]
+[ext_resource type="PackedScene" uid="uid://cwo8cmgyifht3" path="res://laser.tscn" id="2_r4bft"]
+[ext_resource type="AudioStream" uid="uid://cef6nu6j0e6tb" path="res://Assets/kenney-impact-sounds-for-godot-999dd1684873f8b020a3aa5b26e713da21688924/addons/kenney impact sounds/impact_soft_medium_003.ogg" id="4_nnce4"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_quolt"]
 atlas = ExtResource("1_f3aus")
@@ -50,6 +52,7 @@ height = 22.0
 
 [node name="Player" type="CharacterBody2D"]
 position = Vector2(541, 288)
+motion_mode = 1
 script = ExtResource("1_abbby")
 metadata/_edit_group_ = true
 
@@ -63,3 +66,9 @@ shape = SubResource("CapsuleShape2D_8flkk")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(2, 2)
+
+[node name="Laser" parent="." instance=ExtResource("2_r4bft")]
+position = Vector2(0, -11)
+
+[node name="SnowballHitSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_nnce4")
