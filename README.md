@@ -8,4 +8,4 @@ use "WAS" or arrows keys for movement
 "space" to fire
 "M" to mute music.
 
-![alt text](screenshot.png)
+![alt text](screenShot.png)
