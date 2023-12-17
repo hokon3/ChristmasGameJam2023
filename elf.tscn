@@ -1,9 +1,10 @@
-[gd_scene load_steps=81 format=3 uid="uid://c8q4drqfr1s3c"]
+[gd_scene load_steps=82 format=3 uid="uid://c8q4drqfr1s3c"]
 
 [ext_resource type="Texture2D" uid="uid://dohoqs7bp2edg" path="res://Assets/lpc-santa/_preview/Download67652.png" id="1_ibfom"]
 [ext_resource type="Script" path="res://elf.gd" id="1_lbwer"]
 [ext_resource type="PackedScene" uid="uid://kv68atfjxgod" path="res://snowball.tscn" id="2_lsw2g"]
 [ext_resource type="Texture2D" uid="uid://1gri1leelmcp" path="res://Assets/fire/fire1_64.png" id="3_0ohli"]
+[ext_resource type="AudioStream" uid="uid://dvtbxg7srxpnp" path="res://Assets/spells artisticdude/Fire.mp3" id="5_rb1mq"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_l87v5"]
 radius = 12.0
@@ -559,6 +560,9 @@ shape = SubResource("CapsuleShape2D_l87v5")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_72384")
 animation = &"fire"
+
+[node name="FireSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("5_rb1mq")
 
 [connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
 [connection signal="animation_looped" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_looped"]

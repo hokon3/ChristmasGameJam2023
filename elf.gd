@@ -43,6 +43,7 @@ func hit(damage):
 		alive = false
 		$CollisionShape2D.disabled = true
 		$AnimatedSprite2D.play("fire")
+		$FireSound.play()
 
 func _on_animated_sprite_2d_animation_finished():
 	if ($AnimatedSprite2D.animation == "fire"):

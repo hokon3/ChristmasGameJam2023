@@ -18,6 +18,7 @@ func hit(damage):
 	else:
 		$CollisionShape2D.disabled = true
 		$AnimatedSprite2D.play("fire")
+		$FireSound.play()
 
 func break_shield():
 	if shield:

@@ -1,9 +1,10 @@
-[gd_scene load_steps=68 format=3 uid="uid://nxhh3lwaa3ut"]
+[gd_scene load_steps=69 format=3 uid="uid://nxhh3lwaa3ut"]
 
 [ext_resource type="Texture2D" uid="uid://b7pllwjgjr0om" path="res://Assets/santa/PNG/24x32/Santa-001-light.png" id="1_fr5qr"]
 [ext_resource type="Script" path="res://santa.gd" id="1_irle0"]
 [ext_resource type="Texture2D" uid="uid://1gri1leelmcp" path="res://Assets/fire/fire1_64.png" id="2_a2vck"]
 [ext_resource type="AudioStream" uid="uid://bmiavovpad50e" path="res://Assets/bottle break/Bottle Break.wav" id="4_1k5ib"]
+[ext_resource type="AudioStream" uid="uid://dvtbxg7srxpnp" path="res://Assets/spells artisticdude/Fire.mp3" id="5_so4lv"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_qt612"]
 
@@ -474,6 +475,9 @@ one_shot = true
 
 [node name="shieldBreakSFX" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("4_1k5ib")
+
+[node name="FireSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("5_so4lv")
 
 [connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
 [connection signal="timeout" from="ShieldTimer" to="." method="_on_shield_timer_timeout"]

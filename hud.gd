@@ -25,6 +25,7 @@ func _on_start_button_pressed():
 	$IntroImage.visible = false
 	$IntroText.visible = false
 	$Game_title.visible = false
+	$CreditsButton.visible = false
 	start_game.emit()
 	
 func show_game_over():
@@ -37,3 +38,12 @@ func show_victory():
 
 func _on_restart_button_pressed():
 	get_tree().reload_current_scene()
+
+
+func _on_credits_button_pressed():
+	if ($creditsContainer.visible):
+		$creditsContainer.visible = false
+		$CreditsButton.text = "Show credits"
+	else:
+		$creditsContainer.visible = true
+		$CreditsButton.text = "Hide credits"

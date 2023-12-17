@@ -1,0 +1,16 @@
+Rudolf's revenge made by Håkon Mølstre for RamBase christmas gamejam 2023
+
+Assets:
+Menu background picture made using stable diffusion
+"8-bit Music Pack (Loopable)" by CodeManu licensed CC-BY 3.0: https://opengameart.org/content/8-bit-music-pack-loopable
+"Breaking Bottle" by spookymodem licensed CC-BY 3.0: https://opengameart.org/content/breaking-bottle
+"Christmas Tree" by b_o & bleutailfly licensed CC BY-SA 3.0: https://opengameart.org/node/89022
+Deer (Rework) by Calciumtrice & Jordan Irwin (AntumDeluge) licensed Creative Commons Attribution (CC BY) version 3.0: https://opengameart.org/content/deer-rework
+"Animated Fire" by BenHickling licensed CC0: https://opengameart.org/content/animated-fire
+"Kenney's Impact Sounds" by kenney.nl licensed CC0 1.0 Universal: https://godotengine.org/asset-library/asset/1841
+"Kyrise's Free 16x16 RPG Icon Pack" by kyrise licensed CC BY 4.0: https://opengameart.org/content/kyrises-free-16x16-rpg-icon-pack
+"[LPC] Santa" by bluecarrot16, Johannes Sjölund (wulax), Stephen Challener (Redshrike), Nila122, and Matthew Krohn (makrohn). License: CC-BY-SA 3.0 or GPL 3.0: https://opengameart.org/content/lpc-santa
+"Santa (Cabbit Rework)" by Svetlana Kushnariova (Cabbit) & Jordan Irwin (AntumDeluge) licensed OGA BY 3.0 CC BY 3.0: https://opengameart.org/node/82411
+"Snowball Pixel Art" Created by alf0186 licensed CC0: https://opengameart.org/content/snowball-pixel-art
+"Fire & Evil Spell" by artisticdude licensed CC-BY 3.0: https://opengameart.org/content/fire-evil-spell
+"tiny-tales-overworld-2d-tileset-asset-pack" by Rayane Félix: https://megatiles.itch.io/tiny-tales-overworld-2d-tileset-asset-pack

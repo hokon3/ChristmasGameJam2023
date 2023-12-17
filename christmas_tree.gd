@@ -18,6 +18,8 @@ func hit(damage):
 		$AnimatedSprite2D.animation = "fire"
 		$AnimatedSprite2D.scale.x = 2
 		$AnimatedSprite2D.scale.y = 2
+		$FireSound.play()
+		$CollisionShape2D.disabled = true
 
 
 func _on_animated_sprite_2d_animation_finished():

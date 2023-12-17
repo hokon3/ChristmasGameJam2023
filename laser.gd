@@ -15,7 +15,6 @@ func _process(delta):
 		endpoint = to_local(get_collision_point())
 		if ($Line2D.width > 0 && get_collider().has_method("hit")):
 			get_collider().call_deferred("hit", damage)
-			$FireSound.play()
 	$Line2D.points[1] = endpoint
 	if Input.is_action_just_pressed("fire"):
 		$Line2D.width = damage
